@@ -1,10 +1,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.CAMERA" />
+
     <application
+     android:usesCleartextTraffic="true"
         android:label="QR App"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    
         <activity
             android:name=".MainActivity"
             android:exported="true"

@@ -55,7 +55,7 @@ class HomeScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => ScanScreen()),
+                   MaterialPageRoute(builder: (context) => ScanScreen()),
                 );
               },
               child: Text("مسح QR Code"),
