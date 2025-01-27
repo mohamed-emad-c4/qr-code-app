@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../scan_cubit.dart';
+import '../cubits/scan_cubit.dart';
 
 class ScanScreen extends StatelessWidget {
   @override
